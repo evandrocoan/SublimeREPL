@@ -1,25 +1,33 @@
 [
     {
         "id": "tools",
-        "children": [
+        "children":
+        [
             {
-                "caption": "SublimeREPL",
-                "mnemonic": "R",
-                "id": "SublimeREPL",
-                "children": [
+                "id": "packages",
+                "caption": "Packages",
+                "children":
+                [
                     {
-                        "command": "repl_open",
-                        "caption": "Racket",
-                        "id": "repl_plt_racket",
+                        "caption": "SublimeREPL",
                         "mnemonic": "R",
-                        "args": {
-                            "type": "subprocess",
-                            "encoding": "utf8",
-                            "cmd": ["racket"],
-                            "cwd": "$file_path",
-                            "syntax": "Packages/Racket/Racket.tmLanguage",
-                            "external_id": "racket"
-                        }
+                        "id": "SublimeREPL",
+                        "children": [
+                            {
+                                "command": "repl_open",
+                                "caption": "Racket",
+                                "id": "repl_plt_racket",
+                                "mnemonic": "R",
+                                "args": {
+                                    "type": "subprocess",
+                                    "encoding": "utf8",
+                                    "cmd": ["racket"],
+                                    "cwd": "$file_path",
+                                    "syntax": "Packages/Racket/Racket.tmLanguage",
+                                    "external_id": "racket"
+                                }
+                            }
+                        ]
                     }
                 ]
             }
